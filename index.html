@@ -11,35 +11,51 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-<body style="margin: unset;">
-    <div class="d-flex swiper-container">
-        <header style="flex: 1; height: fit-content; text-align: center;">
-            <h1>madoca uchimura</h1>
-            <div class="menu" style="font-size: 1.8rem;">
-                <div class="hidden_box">
-                    <label class="menu-p" for="label1"><a>about</a></label>
-                    <input type="checkbox" name="" id="label1">
-                    <div class="hidden_show">
-                        <p>テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。</p>
-                    </div>
+<body class="d-flex" style="margin: unset;">
+    <header style="flex: 1; height: fit-content; text-align: center;">
+        <h1>madoca uchimura</h1>
+        <div class="menu" style="font-size: 1.8rem;">
+            <div class="hidden_box">
+                <label class="menu-p" for="label1"><a>about</a></label>
+                <input type="checkbox" name="" id="label1">
+                <div class="hidden_show">
+                    <p>テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。</p>
                 </div>
-                <p class="menu-p"><a href="">contact</a></p>
-                <p class="menu-p"><a href="">portrate</a></p>
-                <p class="menu-p"><a href="">landscape</a></p>
-                <p class="menu-p"><a href="https://www.instagram.com/madoca_uchimura/" target="_blank">instagram</a></p>
-                <p class="menu-p"><a href="https://twitter.com/madoca_uchimura" target="_blank">twitter</a></p>
             </div>
-        </header>
-        <div class="swiper-wrapper" style="height: 100vh; flex: 2; text-align: center;">
-            
+            <p class="menu-p"><a href="">contact</a></p>
+            <p class="menu-p"><a class="portrait-click">portrait</a></p>
+            <p class="menu-p"><a class="landscape-click">landscape</a></p>
+            <p class="menu-p"><a href="https://www.instagram.com/madoca_uchimura/" target="_blank">instagram</a></p>
+            <p class="menu-p"><a href="https://twitter.com/madoca_uchimura" target="_blank">twitter</a></p>
+        </div>
+    </header>
+    <div class="swiper-container" style="height: 100vh; flex: 2; text-align: center;">
+        <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="./img/landscape/IMG_6420-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
             <div class="swiper-slide"><img src="./img/portrait/IMG_6426-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
             <div class="swiper-slide"><img src="./img/landscape/IMG_6422-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
             <div class="swiper-slide"><img src="./img/portrait/IMG_6427-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
             <div class="swiper-slide"><img src="./img/landscape/IMG_6421-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
             <div class="swiper-slide"><img src="./img/landscape/IMG_6428-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
-
+        </div>
+    </div>
+    <div class="swiper-container2" style="height: 100vh; flex: 2; text-align: center;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/portrait/IMG_6426-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/portrait/IMG_6427-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+        </div>
+    </div>
+    <div class="swiper-container3" style="height: 100vh; flex: 2; text-align: center;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6421-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6420-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6422-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6423-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6424-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6425-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="./img/landscape/IMG_6428-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
