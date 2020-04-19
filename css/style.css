@@ -7,7 +7,7 @@ a {
     text-decoration: none;
     color: black;
 }
-a::after {
+.b-line::after {
     position: absolute;
     bottom: -4px;
     left: 0;
@@ -19,7 +19,7 @@ a::after {
     transform-origin: left top;
     transition: transform .3s;
     }
-a:hover::after {
+.b-line:hover::after {
     transform: scale(1, 1);
 }
 .d-flex {

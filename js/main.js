@@ -1,59 +1,67 @@
-const mySwiper = new Swiper ('.swiper-container', {
-    direction: 'vertical',
-    effect: 'slide',
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-        delay: 300000,
-    },
-    mousewheel: {
-        invert: false,
-    },
-})
-
-const mySwiper2 = new Swiper ('.swiper-container2', {
-    direction: 'vertical',
-    effect: 'slide',
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-    },
-    mousewheel: {
-        invert: false,
-    },
-})
-
-const mySwiper3 = new Swiper ('.swiper-container3', {
-    direction: 'vertical',
-    effect: 'slide',
-    slidesPerView: 1,
-    loop: true,
-    autoplay: {
-        delay: 3000,
-    },
-    mousewheel: {
-        invert: false,
-    },
-})
-
-// $('.portrait').on('click',function(){
-//     mySwiper.slideTo(0, 100);
-//     })
-    
-$(function(){
-    $('.swiper-container2').hide();
-    $('.swiper-container3').hide();
-    $('.portrait-click').on('click',function(){
-        $('.swiper-container').hide();
-        $('.swiper-container3').hide();
-        $('.swiper-container2').show();
-        mySwiper2.slideTo(0, 100);
+$(document).ready(function () {
+    //initialize swiper when document ready
+    var mySwiper = new Swiper ('.mix', {
+        direction: 'vertical',
+        effect: 'slide',
+        slidesPerView: 1,
+        loop: true,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+        },
+        mousewheel: {
+            invert: false,
+        },
+        observer: true,
+        observeParents: true,
+        // freeMode: true
     })
+});
+$(function(){
+    $('.portrait-click').on('click',function(){
+        $('.mix').hide();
+        $('.landscape').hide();
+        $('.portrait').show();
+        const mySwiper2 = new Swiper ('.portrait', {
+            direction: 'vertical',
+            effect: 'slide',
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            mousewheel: {
+                invert: false,
+            },
+            observer: true,
+            observeParents: true,
+            // freeMode: true
+        })
+        mySwiper2.update();
+        
+    })
+    
     $('.landscape-click').on('click',function(){
-        $('.swiper-container').hide();
-        $('.swiper-container2').hide();
-        $('.swiper-container3').show();
-        mySwiper3.slideTo(0, 100);
+        $('.mix').hide();
+        $('.portrait').hide();
+        $('.landscape').show();
+        var mySwiper3 = new Swiper ('.landscape', {
+            direction: 'vertical',
+            effect: 'slide',
+            slidesPerView: 1,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            mousewheel: {
+                invert: false,
+            },
+            observer: true,
+            observeParents: true,
+            // freeMode: true
+        })
+        mySwiper3.update();
     })
 })
