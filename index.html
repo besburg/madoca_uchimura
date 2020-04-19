@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>madoca uchimura</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100|Sawarabi+Gothic&display=swap" rel="stylesheet">
@@ -10,32 +11,54 @@
     <link rel="stylesheet"href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
-<body style="margin: unset;">
-    <div class="d-flex swiper-container">
-        <header style="flex: 1; height: fit-content; text-align: center;">
-            <h1>madoca uchimura</h1>
-            <div class="menu" style="font-size: 1.8rem;">
-                <div class="hidden_box">
-                    <label class="menu-p" for="label1"><a>about</a></label>
-                    <input type="checkbox" name="" id="label1">
-                    <div class="hidden_show">
-                        <p>テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。</p>
-                    </div>
+<body class="d-flex" style="margin: unset;">
+    <header style="flex: 1; height: fit-content; text-align: center;">
+        <h1><a href="">madoca uchimura</a></h1>
+        <div class="menu" style="font-size: 1.8rem;">
+            <div class="hidden_box">
+                <label class="menu-p" for="label1"><a class="b-line">about</a></label>
+                <input type="checkbox" name="" id="label1">
+                <div class="hidden_show">
+                    <p>テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストが入る。テキストだよ。</p>
                 </div>
-                <p class="menu-p"><a href="">contact</a></p>
-                <p class="menu-p"><a href="">portrate</a></p>
-                <p class="menu-p"><a href="">landscape</a></p>
-                <p class="menu-p"><a href="https://www.instagram.com/madoca_uchimura/" target="_blank">instagram</a></p>
-                <p class="menu-p"><a href="https://twitter.com/madoca_uchimura" target="_blank">twitter</a></p>
             </div>
-        </header>
-        <div class="swiper-wrapper" style="height: 100vh; flex: 2; text-align: center;">
-            
-                <div class="swiper-slide"><img src="./img/imgtest.jpg" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
-                <div class="swiper-slide"><img src="./img/imgtest.jpg" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
-                <div class="swiper-slide"><img src="./img/imgtest.jpg" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
-            
+            <p class="menu-p"><a href="" class="b-line">contact</a></p>
+            <p class="menu-p"><a class="portrait-click b-line" style="cursor: pointer;">portrait</a></p>
+            <p class="menu-p"><a class="landscape-click b-line" style="cursor: pointer;">landscape</a></p>
+            <p class="menu-p"><a class="b-line" href="https://www.instagram.com/madoca_uchimura/" target="_blank">instagram</a></p>
+            <p class="menu-p"><a class="b-line" href="https://twitter.com/madoca_uchimura" target="_blank">twitter</a></p>
+        </div>
+    </header>
+    <div class="swiper-container mix" style="flex: 2; height: 100vh; text-align: center;">
+        <div  class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/landscape/IMG_6420-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/portrait/IMG_6426-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6421-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/portrait/IMG_6427-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6422-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6423-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+        </div>
+    </div>
+
+    <div class="swiper-container portrait" style="flex: 2; height: 100vh; text-align: center; display: none;">
+        <div  class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/portrait/IMG_6426-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/portrait/IMG_6427-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+        </div>
+    </div>
+
+    <div class="swiper-container landscape" style="flex: 2; height: 100vh; text-align: center; display: none;">
+        <div  class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/landscape/IMG_6420-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6421-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6422-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6423-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6424-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6425-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+            <div class="swiper-slide"><img src="img/landscape/IMG_6428-min.JPG" alt="" style="height: 100%; padding: 1%; box-sizing: border-box;"></div>
+
         </div>
     </div>
     <script type="text/javascript" src="js/main.js"></script>
