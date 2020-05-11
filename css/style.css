@@ -53,3 +53,31 @@ a {
     height: auto;
     opacity: 1;
 }
+.swiper-slide img {
+    height: 100%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+
+/* 画面サイズが480以下（スマホ）のときに適応されるCSS */
+/* 変更点だけを書けばおk　！！ */
+@media screen and (max-width:480px) { 
+    .sp-posi{
+        position: relative;
+    }
+    .pc-header{
+        display: none;
+    }
+    .sp-header{
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        z-index: 2;
+        display: block!important;
+        width:50%;
+        background-color: #fff;
+   }
+   .swiper-slide img{
+       padding: unset;
+   }
+}
