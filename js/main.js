@@ -64,4 +64,12 @@ $(function(){
         })
         mySwiper3.update();
     })
+
+    $('.menu-trigger').click(function(){
+        if($(this).hasClass("active")){ // クリックされた要素がclickedクラスだったら
+            $(this).removeClass("active");
+          }else{
+            $(this).addClass("active");
+        }
+    })
 })
