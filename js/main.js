@@ -66,7 +66,7 @@ $(function(){
     })
 
     $('.menu-trigger').click(function(){
-        if($(this).hasClass("active")){ // クリックされた要素がclickedクラスだったら
+        if($(this).hasClass("active")){
             $(this).removeClass("active");
           }else{
             $(this).addClass("active");
