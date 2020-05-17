@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    //ロードされたらハンバーガーメニューを隠す。
+    $('.menu-container .menu').hide();
     //initialize swiper when document ready
     var mySwiper = new Swiper ('.mix', {
         direction: 'vertical',
@@ -77,9 +79,10 @@ $(function(){
     //以下ハンバーガーメニュースライド
     $('.menu-trigger').on('click', function() {
         if($('.menu-container .menu').css('display') === 'block') {
-          $('.menu-container .menu').slideUp('1500');
+            // console.log("aaaa");
+            $('.menu-container .menu').slideUp('1500');
         }else {
-          $('.menu-container .menu').slideDown('1500');
+            $('.menu-container .menu').slideDown('1500');
         }
     });
 })
