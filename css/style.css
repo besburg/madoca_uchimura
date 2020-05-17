@@ -61,7 +61,14 @@ a {
 
 /* 画面サイズが480以下（スマホ）のときに適応されるCSS */
 /* 変更点だけを書けばおk　！！ */
-@media screen and (max-width:480px) { 
+@media screen and (max-width:480px) {
+    ul {
+        padding-inline-start: unset;
+    }
+    .menu li {
+        font-size: 1.8rem;
+        list-style: none;
+    }
     .sp-posi{
         position: relative;
     }

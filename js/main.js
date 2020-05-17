@@ -65,6 +65,7 @@ $(function(){
         mySwiper3.update();
     })
 
+    //以下ハンバーガーメニューアイコン変化
     $('.menu-trigger').click(function(){
         if($(this).hasClass("active")){
             $(this).removeClass("active");
@@ -72,4 +73,13 @@ $(function(){
             $(this).addClass("active");
         }
     })
+
+    //以下ハンバーガーメニュースライド
+    $('.menu-trigger').on('click', function() {
+        if($('.menu-container .menu').css('display') === 'block') {
+          $('.menu-container .menu').slideUp('1500');
+        }else {
+          $('.menu-container .menu').slideDown('1500');
+        }
+    });
 })
