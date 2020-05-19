@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    //ロードされたらハンバーガーメニューを隠す。
+    $('.menu-container .menu').hide();
     //initialize swiper when document ready
     var mySwiper = new Swiper ('.mix', {
         direction: 'vertical',
@@ -6,7 +8,7 @@ $(document).ready(function () {
         slidesPerView: 1,
         loop: true,
         autoplay: {
-            delay: 1000,
+            delay: 3000,
             disableOnInteraction: false,
         },
         mousewheel: {
@@ -64,4 +66,23 @@ $(function(){
         })
         mySwiper3.update();
     })
+
+    //以下ハンバーガーメニューアイコン変化
+    $('.menu-trigger').click(function(){
+        if($(this).hasClass("active")){
+            $(this).removeClass("active");
+          }else{
+            $(this).addClass("active");
+        }
+    })
+
+    //以下ハンバーガーメニュースライド
+    $('.menu-trigger').on('click', function() {
+        if($('.menu-container .menu').css('display') === 'block') {
+            // console.log("aaaa");
+            $('.menu-container .menu').slideUp('1500');
+        }else {
+            $('.menu-container .menu').slideDown('1500');
+        }
+    });
 })
